@@ -33,7 +33,7 @@ function addErrorMessage(input, errorType) {
     input.parentNode.insertBefore(p, input.nextElementSibling);
     input.style.border = "2px solid #ff7a7a";
 
-    input.style.background = "white url(/images/icon-error.svg) no-repeat";
+    input.style.background = "white url(./../images/icon-error.svg) no-repeat";
     input.style.backgroundPosition = "95%";
 }
 
