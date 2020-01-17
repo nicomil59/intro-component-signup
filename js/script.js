@@ -1,7 +1,5 @@
 const button = document.querySelector('button');
 
-console.dir(button);
-
 function handleValues(e) {
     e.preventDefault();
     const inputs = Array.from(e.target.parentNode.elements).slice(0, -1) 
