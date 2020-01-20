@@ -16,41 +16,44 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 
 <body>
-  <div class="wrapper">
-    <section id="description">
-      <h3>Learn to code by watching others</h3>
+  <div class="container">
+    <main>
+      <section id="description">
+        <h3>Learn to code by watching others</h3>
+    
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+      </section>
+    
+      <section id="subscription">
+        <h4><strong>Try it free 7 days</strong> then $20/mo. thereafter</h4>
+        <form id="subscription-form">
+          <input type="text" placeholder="First Name" aria-label="First Name" name="firstname" required>
+          <input type="text" placeholder="Last Name" aria-label="Last Name" name="lastname" required>
+          <input type="email" placeholder="Email Address" aria-label="Email Adress" name="email" required>
+          <input type="password" placeholder="Password" aria-label="Password" name="password" required>
+          <button>Claim your free trial </button>
+          <p class="agreeing">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+    
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://twitter.com/nicomildev" target="_blank">nicomil</a>.
+      </p>
+    </footer>
   
-      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-        but understanding how developers think is invaluable. </p>
-    </section>
-  
-    <section id="subscription">
-      <h4><strong>Try it free 7 days</strong> then $20/mo. thereafter</h4>
-      <form id="subscription-form">
-        <input type="text" placeholder="First Name" aria-label="First Name" name="firstname" required>
-        <input type="text" placeholder="Last Name" aria-label="Last Name" name="lastname" required>
-        <input type="email" placeholder="Email Address" aria-label="Email Adress" name="email" required>
-        <input type="password" placeholder="Password" aria-label="Password" name="password" required>
-        <button>Claim your free trial </button>
-        <p class="agreeing">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-      </form>
-  
-    </section>
   </div>
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://twitter.com/nicomildev" target="_blank">nicomil</a>.
-    </p>
-  </footer>
+  
   
 </body>
 </html>

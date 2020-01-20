@@ -8,19 +8,25 @@ body {
     background-color: #ff7a7a;
     background-image: url('./images/bg-intro-mobile.png');
     margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.wrapper {
+main {
     display: flex;
     flex-direction: column;
     width: 90%;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    margin: auto;
 }
 
 #description {
@@ -119,16 +125,27 @@ body {
     text-align: right;
 }
 
+footer {
+    height: 30px;
+}
+
+footer .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer .attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 
 @media only screen and (min-width: 720px) { 
     
     body {
-        height: 100vh;
         background-image: url('./images/bg-intro-desktop.png');
     }
     
-    .wrapper {
+    main {
         flex-direction: row;
         width: 80%;
     }
@@ -154,16 +171,17 @@ body {
         padding: 25px 40px 25px 40px;
     }
 
-    footer {
-        position: absolute;
-        height: 10px;
-        bottom: 30px; 
-    }
-
 }
 
 @media only screen and (min-width: 1441px) { 
     #subscription h4, #subscription #subscription-form {
         width: 90%;
     }
+}
+
+
+.inputError {
+    border: 2px solid #ff7a7a !important;
+    background: white url('./images/icon-error.svg') no-repeat;
+    background-position: 95%;
 }
